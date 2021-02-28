@@ -3,7 +3,7 @@ window.onload = async function () {
     alert('이 페이지는 모바일 환경에 최적화된 페이지입니다')
   }   
 
-  const data = await fetch('/calendar.json').then(function(res) { return res.json() })
+  const data = await fetch('./calendar.json').then(function(res) { return res.json() })
   document.getElementById('room').onchange = function (ev) {
     renderTables(data[Number(ev.target.value)])
   }
