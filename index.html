@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style.css">
+    <title>Online Calendar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <select id="room" autocomplete="off">
+        <option selected disabled>여기를 눌러 학반을 선택하세요</option>
+        <option value="0">1반 (소프트웨어과)</option>
+        <option value="1">2반 (소프트웨어과)</option>
+        <option value="2">3반 (게임개발과)</option>
+        <option value="3">4반 (사물인터넷과)</option>
+      </select>
+    </nav>
+
+    <div class="scrolling-wrapper-flexbox display-none">
+      <div class="pad"><div class="card"><div class="day" style="background-color: #ff4747">월 (Mon)</div><ul class="table"></ul></div></div>
+      <div class="pad"><div class="card"><div class="day" style="background-color: #ffaf47">화 (Tue)</div><ul class="table"></ul></div></div>
+      <div class="pad"><div class="card"><div class="day" style="background-color: #60ff6d">수 (Wed)</div><ul class="table"></ul></div></div>
+      <div class="pad"><div class="card"><div class="day" style="background-color: #47c5ff">목 (Thu)</div><ul class="table"></ul></div></div>
+      <div class="pad"><div class="card"><div class="day" style="background-color: #7847ff">금 (Fru)</div><ul class="table"></ul></div></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
