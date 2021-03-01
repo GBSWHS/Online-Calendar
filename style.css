@@ -58,7 +58,7 @@ html, body {
 }
 
 .pad {
-  padding: 0px 40px;
+  padding: 0px 30px;
 }
 
 .card {
@@ -67,6 +67,7 @@ html, body {
   font-size: 20px;
   height: auto;
   border-radius: 10px;
+  word-break: keep-all;
   background-color: white;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 
@@ -93,4 +94,23 @@ html, body {
 
 .table > li:hover {
   background-color: rgb(231, 231, 231);
+}
+
+.sp {
+  text-align: center;
+}
+
+.credit {
+  position: fixed;
+  bottom: 0px;
+  color: white;
+  margin: 5px 10px;
+}
+
+.credit> a:visited {
+  color: white;
+}
+
+.credit> a:hover {
+  color: rgb(189, 189, 189);
 }

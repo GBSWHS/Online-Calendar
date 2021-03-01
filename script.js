@@ -14,7 +14,7 @@ function renderTables (data) {
 
   const elems = document.getElementsByClassName('table')
 
-  for (let index = 0; index < elems.length; index++) {
+  for (let index = 1; index < elems.length; index++) {
     elems[index].innerHTML = ''
 
     for (let time = 0; time < data[index].length; time++) {
